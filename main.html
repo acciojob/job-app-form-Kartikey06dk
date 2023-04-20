@@ -1,16 +1,36 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <form method="post">
+        <label for="name" >Name</label>
+        <input type="name" name="name" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="gender">Select your gender:</label>
+        <label for="gender_m">Male</label>
+        <input type="radio" name="gender" id="gender_m" required>
+        <label for="gender_f">Female</label>
+        <input type="radio" name="gender" id="gender_f" required>
+        <label for="laptop">Lpatop Brands</label>
+        <select name="laptop" id="laptop" required>
+            <option value="" disabled selected>--Please choose an option--</option>
+            <option value="apple">Apple</option>
+            <option value="asus">Asus</option>
+            <option value="hp">HP</option>
+        </select>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" required>
+        <label for="DOB">DOB</label>
+        <input type="date" name="DOB" id="dob" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <button type="submit">submit</button>
+    </form>
 </body>
-
 </html>
